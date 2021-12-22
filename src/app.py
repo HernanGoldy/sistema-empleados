@@ -104,7 +104,7 @@ def update():
         nuevoNombreFoto= tiempo + '_' + _foto.filename
         _foto.save("src/uploads/" + nuevoNombreFoto)
     
-    sql= f'SELECT foto FROM empleados where id={id}'
+    sql= f'SELECT foto FROM empleados WHERE id={id}'
     cursor.execute(sql)
 
     nombreFoto= cursor.fetchone()[0]
