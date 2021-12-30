@@ -144,8 +144,6 @@ def update():
     sql= "UPDATE `empleados` SET nombre= %s, correo= %s WHERE id=%s;"
     conn.commit()
     
-
-
     return redirect('/')
 
 
